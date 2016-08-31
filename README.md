@@ -6,7 +6,7 @@ https://cse.sc.edu/~fenner/csce531
 
 ## Usage
 
-        ./ba <RAL code filename>
+        va./ba <RAL code filename>
 
 Here, <RAL code filename> is the name of the file containing a RAL program.
 
@@ -188,7 +188,7 @@ A particularly space-efficient way of handling forward branches is by embedding 
 
 You need to check for the following semantic errors:
 
-    - A varable or array name must be introduced by an .alloc directive in the source code above where it is used as an argument.
+    - A variable or array name must be introduced by an .alloc directive in the source code above where it is used as an argument.
     - The same name cannot be used in more than one .alloc directive.
     - No memory allocation may exceed the bounds of the memory array.
     - Any label used as a branch destination must occur exactly once on a line by itself, followed by a colon. The latter need not occur before the label's first use as a branch destination, however (see Backpatching, above). That is, all labels must have been resolved to unique instruction indices when assembly ends. 
