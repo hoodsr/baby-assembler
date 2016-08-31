@@ -1,0 +1,17 @@
+ALLOC ONE VAR: list
+SYMTABLE V IMPORTANT: list, (index 1)
+ALLOC TWO VAR: 10
+opcode loada REG#: 0 list two args direct (index 1)
+
+SYMTABLE DECLARE: "$foo", (ln 4)
+opcode move REG#: 1 TWO ARGS REG#: 0
+opcode add REG#: 1 two args int 10opcode cmp REG#: 0 TWO ARGS REG#: 1
+opcode bgt backpatching #1 (line 8), label = $bar
+
+opcode load REG#: 2
+ALLOC ONE VAR: a
+SYMTABLE V IMPORTANT: a, (index 11)
+
+
+SYMTABLE DECLARE: "$quit", (ln 13)
+12 lines
