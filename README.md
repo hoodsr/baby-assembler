@@ -16,7 +16,7 @@ Your two tasks---assembling a RAL source program and simulating its execution---
 
 Phase 1 of your program should do some initializations then call yylex() only once. In other words, the flex pattern-matching engine should be the main driver of your assembly, and you are only allowed to make one pass through the source program (hence the term, "one-pass assembler").
 
-RAL Syntax
+###RAL Syntax
 
 Before we start, let's get our terminology straight. For our purposes,
 
